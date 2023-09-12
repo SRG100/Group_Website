@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="Description" content="about bonsai plant">
+    <meta name="Keyword" content="bonsai,miniature plant">
+    <meta name="author" content="Garima">
+    <meta name="refresh" content="2">
+    <title>FeedBack Form</title>
+    <!-- Linking external CSS of form and footer  -->
+    <link rel="stylesheet" type="text/css" href="../Css/formcss.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <style>
+        /* internal css */
+        * {
+            font-family: poppins;
+            margin: 0;
+            padding: 0;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header class="header-style">
+        <nav>
+            <table style="color: whitesmoke;background-color:none; text-align: left; font-family: Poppins;">
+                <tr class="row">
+                    <th>
+                        <a href="homepage.html">Home</a>
+                    </th>
+                    <th>
+                        <a href="Products.html">Products</a>
+                    </th>
+                    <th>
+                        <a href="Blog.html">Blog</a>
+                    </th>
+                    <th>
+                        <a href="ref.html">Research</a>
+                    </th>
+                    <th>
+                        <a href="About.html">About us</a>
+                    </th>
+                    <th>
+                        <a href="form.html">FeedBack</a>
+                    </th>
+                </tr>
+                <img src="../images/icon/addtocart.png" alt="Add to cart symbol" class="image">
+                <img src="../images/icon/account.png" alt="Account symbol" class="image1">
+            </table>
+        </nav>
+    </header>
+
+    <div class="form1">
+        <!-- form section  -->
+        <div class="form2">
+            <form name="Myform">
+
+                <!-- for first name  -->
+                <label>First Name:</label>
+                <input type="text" name="fname" class="inbox" required><br> <br>
+
+                <!-- for last name  -->
+                <label>Last Name:</label>
+                <input type="text" name="lname" class="inbox" required><br> <br>
+
+                <!-- for email  -->
+                <label>E-mail:</label>
+                <input type="email" name="email" class="inbox" required><br> <br>
+
+                <!-- choosing gender -->
+                <label>Gender:</label> <br>
+                <input type="radio" name="gender" value="male" checked>Male <br>
+                <input type="radio" name="gender" value="female" checked>Female <br><br>
+
+                <!-- for feedback -->
+                <label>Your feedback:</label> <br>
+                <textarea placeholder=" Your feedback" name="feedback" cols="40" rows="4" style="font-weight: bolder;"
+                    required></textarea>
+
+                <!-- for popup to appear after clicking this button -->
+                <div class="btn">
+                    <button type="button" onclick="openPopup()">Send</button>
+                </div>
+                <!-- Popup for when the form is completely filled -->
+                <div class="popup1" id="popup" style="position: fixed;">
+                    <h3>Thank you for Your feedback</h3>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+                <!-- Popup for when the form is incomplete  -->
+                <div class="popup1" id="popout" style="position: fixed; ">
+                    <h3>Please fill all field.</h3>
+                    <button type="button" onclick="closePopup()">OK</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+
+                <!-- description about our team  -->
+                <div class="footer-col">
+                    <h4>About Teams</h4>
+                    <p style="color: #ffff">
+                        We are a group of students currently studying in Islington college.
+                        This is our group coursework which was to
+                        make an e-commerce website to sell bonsai.
+                    </p>
+                </div>
+
+                <!-- shortcuts for feedbackforms  -->
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="form.html">Contact Us</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+
+                <!-- shortcuts for diffrent pages -->
+                <div class="footer-col">
+                    <h4>Popular Links</h4>
+                    <ul class="rowpop">
+                        <li>
+                            <a href="homepage.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="Blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="ref.html">References</a>
+                        </li>
+                        <li>
+                            <a href="About.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- division for the social links -->
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"> <img src="../Images/icon/fb.png" alt="facebook icon"></a>
+                        <a href=""> <img src="../Images/icon/insta.png" alt="insta icon"> </a>
+                        <a href=""> <img src="../Images/icon/tiktok.png" alt="tiktok icon"> </a>
+                        <a href=""> <img src="../Images/icon/whatsapp.png" alt="facebook icon"> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- internal javascript  -->
+    <script type="text/javascript">
+
+        // for popup to appear 
+        function openPopup() {
+            var fname = document.forms["Myform"]["fname"].value;
+            var lname = document.forms["Myform"]["lname"].value;
+            var feedback = document.forms["Myform"]["feedback"].value;
+            var email = document.forms["Myform"]["email"].value;
+            if (fname == "" || lname == "" || feedback == "" || email == "") {
+                document.getElementById("popout").classList.add("openPopup");
+            }
+            else {
+                document.getElementById("popup").classList.add("openPopup");
+            }
+        }
+
+        // for opoup to close 
+        function closePopup() {
+            document.getElementById("popout").classList.remove("openPopup");
+            document.getElementById("popup").classList.remove("openPopup");
+        }
+
+    </script>
+</body>
+
+</html>

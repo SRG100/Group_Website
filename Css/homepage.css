@@ -1,0 +1,276 @@
+/* uploading downloaded font family */
+@font-face {
+	font-family: Poppins;
+	src: url("Poppins-ExtraLight.ttf");
+}
+
+.div1 {
+	width: 100%;
+	height: 620px;
+	position: relative;
+	overflow: hidden;
+	top: 0;
+	margin: 0;
+	margin-top: -30px;
+	padding: 0;
+	border: 0px;
+}
+
+/* Css of background image */
+.backimg img {
+	height: 700px;
+	overflow: hidden;
+}
+
+.back {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.do {
+	width: 100%;
+	height: 700px;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+	position: relative;
+	top: 0;
+}
+
+/* CSS of header */
+.header-style {
+	position: relative;
+	width: 100%;
+	margin-top: 0%;
+	padding: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	box-shadow: 2px 2px white;
+}
+
+.nav {
+	width: 100%;
+
+}
+
+.table {
+	font-size: small;
+	font-style: bold;
+	color: rgb(243, 190, 120);
+
+}
+
+.table a {
+	text-decoration: none;
+	color: rgb(243, 190, 120);
+}
+
+.row th a {
+	text-decoration: none;
+	color: whitesmoke;
+	font-family: Poppins;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px 20px;
+	font-size: 20px;
+}
+
+/* Hover effect for nav  */
+.row th :hover {
+
+	border-radius: 25px;
+	background-color: white;
+	color: black;
+}
+
+
+/* Css for search bar */
+.bar {
+	width: 300px;
+	height: 30px;
+	background: transparent;
+	box-shadow: none;
+	color: white;
+	border-radius: 25px;
+	font-size: 20px;
+	visibility: hidden;
+
+}
+
+/* for search bar to show  */
+.visible {
+	visibility: visible;
+
+}
+
+.search {
+	margin-left: 870px;
+	margin-bottom: -35px;
+	margin-top: 7px;
+}
+
+
+.search-logo {
+	width: 30px;
+	height: 30px;
+	align-items: center;
+	justify-content: center;
+	margin-left: 0px;
+	margin-bottom: -10px;
+	cursor: pointer;
+}
+
+.image {
+	float: right;
+	width: 50px;
+	cursor: pointer;
+	border-radius: 50px;
+	margin-top: -5px;
+	margin-right: 30px;
+}
+
+.image1 {
+	float: right;
+	width: 40px;
+	margin-right: 10px;
+	border-radius: 25px;
+	cursor: pointer;
+	margin-top: 1px;
+	padding-bottom: 3px;
+}
+
+
+.text {
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	width: 100%;
+	height: 700px;
+	margin-top: 10%;
+	position: absolute;
+	margin-top: 70px;
+}
+
+.text h1 {
+	font-size: 40px;
+	text-shadow: 7px 7px rgb(34, 1, 1);
+}
+
+.text p {
+	font-size: 30px;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+.text h1 {
+	font-family: Poppins;
+	font-size: 100px;
+	margin-top: 10px;
+	margin-left: 1%;
+	animation: forwards;
+	margin-bottom: 15px;
+}
+
+.buynow {
+	border-radius: 25px;
+	align-items: center;
+	cursor: pointer;
+	padding: 3px;
+	color: #3C2A21;
+	font-weight: bolder;
+	background-color: #D5CEA3;
+	border: 2px solid #3C2A21;
+	position: relative;
+	width: 200px;
+	height: 50px;
+	margin-bottom: 10px;
+	font-size: 20px;
+}
+
+.buynow:hover {
+	color: #D5CEA3;
+	background-color: #3C2A21;
+	border: 2px solid #D5CEA3;
+
+}
+
+.guide {
+	width: 100%;
+	height: 500px;
+	display: flex;
+}
+
+.left {
+	flex: 50%;
+	background-color: white;
+	border-bottom: 2px solid black;
+}
+
+.left img {
+	width: 700px;
+	height: 500px;
+	scale: 0.5;
+	border-radius: 25px;
+}
+
+.right {
+	flex: 50%;
+	margin-top: 0px;
+	margin-right: 0px;
+	padding-top: 70px;
+	padding-right: 40px;
+	padding-left: 40px;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: black;
+	border-bottom: 2px solid white;
+}
+
+.right h2 {
+	font-size: 40px;
+	flex-direction: row;
+	text-align: center;
+}
+
+.right p {
+	font-size: 25px;
+	text-align: justify;
+
+}
+
+.outline {
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 3px;
+	color: black;
+	font-weight: bolder;
+	background-color: white;
+	border: 2px solid #3C2A21;
+	position: relative;
+	top: 30px;
+	margin-left: 100px;
+	width: 300px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+/* For hover effect */
+.outline:hover {
+	color: white;
+	background-color: black;
+	border: 2px solid white;
+
+}
+
+.pro1 {
+	margin-top: -50px;
+	margin-left: -150px;
+}
+
+.pro2 {
+	margin-top: -370px;
+	margin-left: 100px;
+}

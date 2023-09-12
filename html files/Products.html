@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="Description" content="about bonsai plant">
+    <meta name="Keyword" content="bonsai,miniature plant">
+    <meta name="author" content="Shreyash">
+    <meta name="refresh" content="2">
+    <title>Products</title>
+    <!-- linking the css of product page and footer -->
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../Css/footer.css">
+    <!-- linking the javascript of product page -->
+    <script src="../JavaScript/pro.js"></script>
+    <style>
+        /* CSS for number of items added to cart  */
+        .header-style .number {
+            width: 20px;
+            height: 20px;
+            float: right;
+            background-color: red;
+            visibility: hidden;
+            border: 2px blue;
+            border-radius: 100%;
+            margin-right: -97px;
+        }
+
+        .header-style .number h3 {
+            align-items: center;
+            text-align: center;
+            margin-top: -3px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header section -->
+    <header class="header-style">
+        <!-- navigation bar -->
+        <nav>
+            <table style="color: whitesmoke;background-color:none; text-align: left;">
+                <tr class="row">
+                    <th>
+                        <a href="../homepage.html">Home</a>
+                    </th>
+                    <th>
+                        <a href="./Products.html">Products</a>
+                    </th>
+                    <th>
+                        <a href="./Blog.html">Blog</a>
+                    </th>
+                    <th>
+                        <a href="./ref.html">Research</a>
+                    </th>
+                    <th>
+                        <a href="./About.html">About us</a>
+                    </th>
+                    <th>
+                        <a href="form.html">FeedBack</a>
+                    </th>
+                </tr>
+                <img src="../Images/icon/addtocart.png" alt="Add to cart symbol" class="image">
+                <img src="../Images/icon/account.png" alt="Account symbol" class="image1">
+                <div class="number" id="ATC">
+                    <h3>0</h3>
+                </div>
+            </table>
+        </nav>
+    </header>
+    <!-- moving text area  -->
+    <div class="move">
+        <marquee behaviour="flow" direction="left" scrollamount="20"> !!! SALE SALE SALE !!! 20% OFF ON FIRST ORDER !!!
+            SALE SALE SALE </marquee>
+    </div>
+    <!-- image slider using JavaScript -->
+    <div class="slider ">
+        <div class="sale">
+            <div id="img">
+                <img src="../Images/Propic/pic4.jpeg">
+            </div>
+        </div>
+        <!-- discount text  -->
+        <div class="front left">
+            <h1>GET</h1>
+            <h1>OFF</h1>
+        </div>
+        <div class="front right">
+            <h1>20%</h1>
+            <h1>NOW</h1>
+        </div>
+    </div>
+    <!-- product section  -->
+    <h2 class="our">Our products</h2> <br>
+    <div class="product">
+
+        <!-- For product 1 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/bonsai1.jpg" alt="Bonsai Sale 1">
+                <h3>Goshin Bonsai</h3>
+                <h4><del>350$</del> only at 280$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails1()">View more</button>
+            </div>
+            <!-- Popup about extra details of product -->
+            <div class="details column1" id="DET1">
+                <div class="sec-1">
+                    <img src="../Images/Propic/bonsai1.jpg" alt="Bonsai Sale 1">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails1()">Close</button>
+                </div>
+                <div class="sec-2">
+                    <h3>Goshin Bonsai</h3>
+
+                    <p></p>
+                    <h4> Acutal Price: 350$ </h4>
+                    <h4> Discounted Price: 280$ </h4>
+                    <ul>
+                        <li>300 years old</li>
+                        <li>Outdoor decor</li>
+                        <li>Famous Bonsai</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>Goshin is one of most famous Bonsai in the United States, which is also a reason that it is most
+                        recognized world-wide. Even among Japanese professionals the Goshin is a familiar bonsai.
+                        It can also be called the most famous bonsai in The states.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- For product 2 -->
+        <div class="pro">
+
+            <div class="prod">
+                <img src="../Images/Propic/bonsai15.jpg" alt="Bonsai sale 2">
+                <h3>Bougainvillea bonsai </h3>
+                <h4><del>80$</del> only at 64$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails2()">View more</button>
+            </div>
+            <div class="details column2" id="DET2">
+                <div class="sec-1"><img src="../Images/Propic/bonsai15.jpg" alt="Bonsai Sale 1">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails2()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Bougainvillea bonsai </h3>
+                    <h4> Acutal Price: 80$ </h4>
+                    <h4> Discounted Price: 64$ </h4>
+                    <ul>
+                        <li>5-6 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>This bonsai is around 5-7 years old.As it is easy to take care, this is one one of the popular
+                        item. Just as it is pleasing to the eyes, it is cheap and requires minimal attention. This is
+                        one of our most recommended bonsai. </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 3 -->
+        <div class="pro">
+
+            <div class="prod">
+                <img src="../Images/Propic/pic1.webp" alt="Bonsai sale 3">
+                <h3> Juniper Bonsai</h3>
+                <h4> <del>100$</del> only at 80$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails3()">View more</button>
+            </div>
+            <div class="details column3" id="DET3">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic1.webp" alt="Bonsai Sale 3">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails3()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Juniper Bonsai</h3>
+                    <h4> Acutal Price: 100$ </h4>
+                    <h4> Discounted Price: 80$ </h4>
+                    <ul>
+                        <li>100 years old</li>
+                        <li>Outdoor decor</li>
+                        <li>Easy to nurture</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>
+                        This Jupiter Bonsai is a one-of-a-kind and exquisitely shaped bonsai that resembles the planet
+                        Jupiter. It stands 12 inches tall, is easy to care for, and is ideal for any space. Natural
+                        beauty is added to your home by lush green leaves and delicate branches. A fantastic option for
+                        bonsai enthusiasts of all levels
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 4 -->
+        <div class="pro">
+
+            <div class="prod">
+                <img src="../Images/Propic/pic2.jpg" alt="Bonsai sale 4">
+                <h3> Japanese Juniper Bonsai</h3>
+                <h4><del>250$</del> only at 200$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails4()">View more</button>
+            </div>
+            <div class="details column4" id="DET4">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic2.jpg" alt="Bonsai Sale 4">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails4()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Juniper Bonsai</h3>
+                    <h4> Acutal Price: 250$ </h4>
+                    <h4> Discounted Price: 200$ </h4>
+                    <ul>
+                        <li>2-3 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>This is one of a kind beautiful and small juniper bonsai. If you are looking for a bonsai that
+                        doesn't use that much space then this is the perfect bonsai for you. It is cheap, less space
+                        consuming and requires minimal attention.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 5 -->
+        <div class="pro">
+
+            <div class="prod">
+                <img src="../Images/Propic/pic3.webp" alt="Bonsai sale 5">
+                <h3>Japanese White Pine</h3>
+                <h4><del>4000$</del> only at 3200$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails5()">View more</button>
+            </div>
+            <div class="details column1" id="DET5">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic3.webp" alt="Bonsai Sale 5">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails5()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Japanese White Pine</h3>
+                    <h4> Acutal Price: 4000$ </h4>
+                    <h4> Discounted Price: 3200$ </h4>
+                    <ul>
+                        <li>70 years old</li>
+                        <li>Outdoor decor</li>
+                        <li>A masterpiece</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>This is one of a kind beautiful and big juniper bonsai. If you are looking for a bonsai that
+                        can be a grand decor then this is the perfect bonsai for you. It is perfect for decorating the
+                        external space of house and requires minimal attention</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 6 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic4.jpeg" alt="Bonsai sale 6">
+                <h3>Juniper Bonsai</h3>
+                <h4><del>350$</del> only at 280$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails6()">View more</button>
+            </div>
+            <div class="details column2" id="DET6">
+                <div class="sec-1"><img src="../Images/Propic/pic4.jpeg" alt="Bonsai sale 6">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails6()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Juniper Bonsai</h3>
+                    <h4> Acutal Price: 350$ </h4>
+                    <h4> Discounted Price: 280$ </h4>
+                    <ul>
+                        <li>1-2 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>This Jupiter Bonsai is a one-of-a-kind and exquisitely shaped bonsai that resembles the planet
+                        Jupiter. It stands 12 inches tall, is easy to care for, and is ideal for any space. Natural
+                        beauty is added to your home by lush green leaves and delicate branches. A fantastic option for
+                        bonsai enthusiasts of all levels.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 7 -->
+        <div class="pro">
+
+            <div class="prod">
+                <img src="../Images/Propic/bonsai14.jpg" alt="Bonsai sale 7">
+                <h3>Hwa Fong Bonsai</h3>
+                <h4><del>5000$</del> only at 4000$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails7()">View more</button>
+            </div>
+            <div class="details column3" id="DET7">
+                <div class="sec-1"><img src="../Images/Propic/bonsai14.jpg" alt="Bonsai sale 7">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails7()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Hwa Fong Bonsai</h3>
+                    <h4> Acutal Price: 5000$ </h4>
+                    <h4> Discounted Price: 4000$ </h4>
+                    <ul>
+                        <li>500 years old</li>
+                        <li>Outdoor decor</li>
+                        <li>highly recommended product</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>Hwa fong is one of a kind ANTIQUE bonsai.It is more than 200 years old . Hwa fong is pretty
+                        famous for its grand presence. Though it requires quite care this is a highly
+                        recommended product.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 8 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic5.webp" alt="Bonsai sale 8">
+                <h3>Azalea Bonsai</h3>
+                <h4><del>30$</del> only at 24$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails8()">View more</button>
+            </div>
+            <div class="details column4" id="DET8">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic5.webp" alt="Bonsai sale 8">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails8()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Azalea Bonsai</h3>
+                    <h4> Acutal Price: 30$ </h4>
+                    <h4> Discounted Price: 24$ </h4>
+                    <ul>
+                        <li>7 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                        <li>Floral Bonsai</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>
+                        Azalea Bonsai is a beautiful masterpiece. Perfect for indoor and easy to takecare. This Azalea
+                        Bonsai is of white color and one of our most beautiful products. It is cheap, required minimal
+                        attention and is withou a doubt beautiful.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 9 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic6.jpg" alt="Bonsai sale 9">
+                <h3> CherryBlossom Bonsai</h3>
+                <h4><del>40$</del> only at 32$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails9()">View more</button>
+            </div>
+            <div class="details column1" id="DET9">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic6.jpg" alt="Bonsai sale 9">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails9()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>CherryBlossom Bonsai</h3>
+                    <h4> Acutal Price: 40$ </h4>
+                    <h4> Discounted Price: 32$ </h4>
+                    <ul>
+                        <li>5 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                        <li>Floral Bonsai</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>Bonsai version of world famous Japanese CherryBlossom, this is a flowering type bonsai with
+                        unspeakble beauty.This is an art work made by sakura.This is cheap and also one of the most
+                        selling product.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 10 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic7.jpg" alt="Bonsai sale 10">
+                <h3>Red Maple Bonsai</h3>
+                <h4><del>500$</del> only at 400$</h4>
+
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails10()">View more</button>
+            </div>
+            <div class="details column2" id="DET10">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic7.jpg" alt="Bonsai sale 10">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails10()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Red Maple Bonsai</h3>
+                    <h4> Acutal Price: 500$ </h4>
+                    <h4> Discounted Price: 400$ </h4>
+                    <ul>
+                        <li>6-7 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>This red beauty is one of kind maple bonsai.It's young shoots in spring have yellowish, orange,
+                        or even bright red leaves. It is highly recommended if you have small space and is
+                        cheap.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 11 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic8.jpg" alt="Bonsai sale 11">
+                <h3> Apple Tree Bonsai</h3>
+                <h4><del>35$</del> only at 28$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails11()">View more</button>
+            </div>
+            <div class="details column3" id="DET11">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic8.jpg" alt="Bonsai sale 11">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails11()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3> Apple Tree Bonsai</h3>
+                    <h4> Acutal Price: 35$ </h4>
+                    <h4> Discounted Price: 28$ </h4>
+                    <ul>
+                        <li>1-2 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>The apple tree bonai is the most selling product of B-World.It looks and grows like a regular
+                        apple tree . It also grows flowers and bears real miniaturized apples. This product bears small
+                        apple which are cute and are perfect decor for indoor.</p>
+
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 12 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic9.jpg" alt="Bonsai sale 12">
+                <h3>Juniper Bonsai</h3>
+                <h4><del>350$</del> only at 280$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails12()">View more</button>
+            </div>
+            <div class="details column4" id="DET12">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic9.jpg" alt="Bonsai sale 12">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails12()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Juniper Bonsai</h3>
+                    <h4> Acutal Price: 350$ </h4>
+                    <h4> Discounted Price: 280$ </h4>
+                    <ul>
+                        <li>50 years old</li>
+                        <li>Outdoor decor</li>
+                        <li>12 inch tall</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>This Jupiter Bonsai is a one-of-a-kind and exquisitely shaped bonsai that resembles the planet
+                        Jupiter. It stands 12 inches tall, is easy to care for, and is ideal for any space. Natural
+                        beauty is added to your home by lush green leaves and delicate branches. A fantastic option for
+                        bonsai enthusiasts of all levels</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 13 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic10.jpg" alt="Bonsai sale 13">
+                <h3>Norway Maple Bonsai</h3>
+                <h4><del>20$</del> only at 16$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails13()">View more</button>
+            </div>
+            <div class="details column1" id="DET13">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic10.jpg" alt="Bonsai sale 13">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails13()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Norway Maple Bonsai</h3>
+                    <h4> Acutal Price: 350$ </h4>
+                    <h4> Discounted Price: 280$ </h4>
+                    <ul>
+                        <li>3 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>It is a beautiful medium to large type of bonsai. Though it has big leafs it is a beauty that can
+                        be used as decor for both indoor and outdoor. B-World highy recommends this product. This is
+                        green in color and doesnt require that much of space.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 14 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic11.jpg" alt="Bonsai sale 14">
+                <h3>Premna Bonsai</h3>
+                <h4><del>80$</del> only at 64$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails14()">View more</button>
+            </div>
+            <div class="details column2" id="DET14">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic11.jpg" alt="Bonsai sale 14">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails14()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Juniper Bonsai</h3>
+                    <h4> Acutal Price: 80$ </h4>
+                    <h4> Discounted Price: 64$ </h4>
+                    <ul>
+                        <li>2 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>This product is is deciduous while most other Premna species are evergreen. It's small opposite
+                        leaves are quite diffrent in shape and can be ovate or, toothed with
+                        three lobes, similar to those of the trident maple. This product can be used as indoor and
+                        outdoor decor both.</p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 15 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic12.webp" alt="Bonsai sale  15">
+                <h3>Coastal Redwood Bonsai</h3>
+                <h4><del>170$</del> only at 135$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to open product details  -->
+                <button type="button" class="btn" onclick="opendetails15()">View more</button>
+            </div>
+            <div class="details column3" id="DET15">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic12.webp" alt="Bonsai sale  15">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails15()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Coastal Redwood Bonsai</h3>
+                    <h4> Acutal Price: 170$ </h4>
+                    <h4> Discounted Price: 135$ </h4>
+                    <ul>
+                        <li>25 years old</li>
+                        <li>Outdoor decor</li>
+                        <li>14 inch tall</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>As the miniature versionof world's tallest trees, This product is also quite tall. Althouth a
+                        little bit tall and big it gives grad vibes and is considered to be lucky if situated infront of
+                        the entrance. </p>
+                </div>
+
+            </div>
+        </div>
+        <!-- For product 16 -->
+        <div class="pro">
+            <div class="prod">
+                <img src="../Images/Propic/pic13.jpg" alt="Bonsai sale  16">
+                <h3>Wisteria Bonsai</h3>
+                <h4><del>150$</del> only at 120$</h4>
+                <!-- Button for alert message -->
+                <button type="button" class="btn" onclick="OpenPopup()">Add to cart</button>
+                <!-- Button to show product details  -->
+                <button type="button" class="btn" onclick="opendetails16()">View more</button>
+            </div>
+            <div class="details column4" id="DET16">
+                <div class="sec-1">
+                    <img src="../Images/Propic/pic13.jpg" alt="Bonsai sale  16">
+                    <!-- Button for alert message -->
+                    <button type="button" class="btn-1 " onclick="OpenPopup()">Add to cart</button>
+                    <!-- Button to close product details  -->
+                    <button type="button" class="btn-1 " onclick="closedetails16()">Close</button>
+                </div>
+                <!-- Popup about extra details of product -->
+                <div class="sec-2">
+                    <h3>Wisteria Bonsai</h3>
+                    <h4> Acutal Price: 150$ </h4>
+                    <h4> Discounted Price: 120$ </h4>
+                    <ul>
+                        <li>3-4 years old</li>
+                        <li>Indoor decor</li>
+                        <li>Easy to nurture</li>
+                        <li>Floral Bonsai</li>
+                    </ul>
+                    <h3> Product Details:</h3>
+                    <p>This bonsai is about 1 feet tall with beautiful purple-white flower, is very distint feature of
+                        Wisteria. This product requires a lot of sun-light so its placemant needs to be suitable.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- description about our team  -->
+                <div class="footer-col">
+                    <h4>About Teams</h4>
+                    <p style="color: #ffff">
+                        We are a group of students currently studying in Islington college. This is our group coursework
+                        which was to make an e-commerce website to sell bonsai.
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="./form.html">Contact Us</a></li>
+                        <li><a href="#">Help</a></li>
+                    </ul>
+                </div>
+                <!-- shortcuts for diffrent pages -->
+                <div class="footer-col">
+                    <h4>Popular Links</h4>
+                    <ul class="rowpop">
+                        <li>
+                            <a href="../homepage.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="Products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="Blog.html">Blog</a>
+                        </li>
+                        <li>
+                            <a href="ref.html">References</a>
+                        </li>
+                        <li>
+                            <a href="About.html">About us</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- division for the social links -->
+                <div class="footer-col">
+                    <h4>Follow us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/"> <img src="../Images/icon/fb.png" alt="facebook icon"></a>
+                        <a href="https://www.instagram.com/"> <img src="../Images/icon/insta.png" alt="insta icon"> </a>
+                        <a href="https://www.tiktok.com/"> <img src="../Images/icon/tiktok.png" alt="tiktok icon"> </a>
+                        <a href="https://web.whatsapp.com/"> <img src="../Images/icon/whatsapp.png" alt="whatsapp icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- internal JavaScript  -->
+<script>
+
+    // Javascript for image slider 
+    var images = ['../Images/Propic/pic4.jpeg', '../Images/Propic/pic7.jpg', '../Images/Propic/pic10.jpg',
+        '../Images/Propic/pic8.jpg', '../Images/Propic/pic1.webp'];
+    var x = 0;
+    var imgs = document.getElementById('img');
+    setInterval(sale, 1000);
+
+    function sale() {
+        if (x < images.length) {
+            x = x + 1;
+        }
+        else {
+            x = 1;
+        }
+
+        imgs.innerHTML = "<img src=" + images[x - 1] + ">";
+    }
+</script>
+
+</html>

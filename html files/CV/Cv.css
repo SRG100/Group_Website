@@ -1,0 +1,111 @@
+
+* {
+  margin: 800;
+  padding: 800;
+  font-weight: bolder;
+  box-sizing: border-box;
+  font-family: poppins;
+}
+
+@font-face {
+  font-family: poppins;
+  src: url("../../Css/Poppins-ExtraLight.ttf");
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 50px;
+  background: #fff;
+  display: flex;
+  box-shadow: 0 0 20px 20px rgba(7, 7, 7, 0.1);
+}
+.container .left {
+  position: relative;
+  background: rgb(13, 13, 14);
+  padding: 30px;
+  width: auto;
+}
+
+.head-card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+/* for making circular Image */
+.img-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.img-area .inner-area {
+  border-radius: 50%;
+  height: calc(100% - 25px);
+  width: calc(100% - 25px);
+}
+
+.inner-area img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.right {
+  padding: 30px;
+}
+
+.skills {
+  display: flex;
+  gap: 150px;
+}
+
+.projects-section {
+  color: #fff;
+}
+
+
+
+.wrap-edu {
+  display: flex;
+  gap: 300px;
+  margin-top: 20px;
+}
+
+.contactInfo {
+  color: #fff;
+  margin-top: 20px;
+}
+.contactInfo li {
+  list-style: none;
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
